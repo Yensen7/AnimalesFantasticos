@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+    <script src="./Js/javascript.js"></script>
+
+</head>
+
+<body>
+    <section class="container">
+        <section class="title">
+            <span class="primary">
+                <h1>Animales Mitologicos</h1>
+            </span>
+            <span class="secundary">
+                Estos son los animales fantasticos
+            </span>
+        </section>
+        <section class="gallery-wrapper">
+            <figure class="gallery-item">
+                <img src="./IMG/Quimera.jpg" alt="Quimera" class="item-image">
+                <figcaption class="item-description">
+                    <h2 class="name">Quimera</h2>
+                    <span class="role">No te dejes llevar por su belleza</span>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="./IMG/fantasma.jpg" alt="GolemDeCobre" class="item-image">
+                <figcaption class="item-description">
+                    <h2 class="name">Fantasma</h2>
+                    <span class="role">Cuida por donde caminas</span>
+                </figcaption>
+            </figure>
+            <figure class="gallery-item">
+                <img src="./IMG/Kraken.jpg" alt="FireRatworks" class="item-image">
+                <figcaption class="item-description">
+                    <h2 class="name">Kraken</h2>
+                    <span class="role">La realidad de la mitología</span>
+                </figcaption>
+            </figure>
+        </section>
+    </section>
+
+    <h2 id="seleccion">Selecciona tu personaje:</h2>
+    <div class="container">
+        <div class="row">
+          <div class="character-container">
+            <img src="./IMG/Quimera.jpg" alt="Personaje 1">
+            <h2>Quimera de Cristal</h2>
+            <p>Viento 🌬️</p>
+            <button onclick="selectCharacter(1)">Seleccionar</button>
+          </div>
+          <div class="character-container">
+            <img src="./IMG/Dragon ermitaño.jpg" alt="Personaje 2">
+            <h2>Dragón Ermitaño</h2>
+            <p>Viento 🌬️</p>
+            <button onclick="selectCharacter(2)">Seleccionar</button>
+          </div>
+          <div class="character-container">
+            <img src="./IMG/Kraken.jpg" alt="Personaje 3">
+            <h2>Kraken Acerrifico</h2>
+            <p>Agua 💧</p>
+            <button onclick="selectCharacter(3)">Seleccionar</button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="character-container">
+            <img src="./IMG/Nebulus.jpg" alt="Personaje 4">
+            <h2>Nebulus Luminoso</h2>
+            <p>Fuego 🔥</p>
+            <button onclick="selectCharacter(4)">Seleccionar</button>
+          </div>
+          <div class="character-container">
+            <img src="./IMG/fantasma.jpg" alt="Personaje 5">
+            <h2>Fantasma Quiebraterra</h2>
+            <p>Tierra ⛰</p>
+            <button onclick="selectCharacter(5)">Seleccionar</button>
+          </div>
+          <div class="character-container">
+            <img src="./IMG/Titán.jpg" alt="Personaje 6">
+            <h2>Titán Escudero</h2>
+            <p>Tierra ⛰</p>
+            <button onclick="selectCharacter(6)">Seleccionar</button>
+          </div>
+        </div>
+      </div>
+
+    <h2 class="rond">Ronda: <span id="round">1</span></h2>
+    <h3 class="Personaje">Tu personaje: <span id="player-character"></span></h3>
+    <h3 class="Maquina">Personaje de la máquina: <span id="computer-character"></span></h3>
+    <h3 class="Resultado">Resultado: <span id="result"></span></h3>
+
+
+
+
+
+
+
+<section id="seleccionar_animal">
+    <input type="radio" name="animales" id="Quimera">
+    <label for="Quimera">Quimera de Cristal</label>
+    <input type="radio" name="animales" id="Dragon">
+    <label for="Dragon">Dragón Ermitaño</label>
+    <input type="radio" name="animales" id="Kraken">
+    <label for="Kraken">Kraken Acerrifico</label>
+<button id="seleccionador">Seleccionar</button>
+
+<section id="seleccionar_poder">
+  <h2>Seleccionar poder</h2>
+
+  <p>Tú animal fantástico <span id="animalJugador"></span> tiene 3 vidas</p>
+  <p>El animal fantástico del contricante es <span id="aniamlRival"></span> tiene 3 vidas</p>
+
+  <section>
+    <button id="botontierra">Tierra</button>
+    <button id="botonagua">Agua</button>
+    <button id="botonFuego">Fuego</button>
+  </section>
+  <section id="mensajes">
+    <p>Tu animal fantastico atacó con FUEGO, el animal del contricante atacó con TIERRA, has GANADO...</p>
+  </section>
+<section id="nuevo_inicio">
+  <button id="boton_recargar">Recargar Vidas</button>
+</section>
+
+
+    
+    
+</body>
+
+</html>
